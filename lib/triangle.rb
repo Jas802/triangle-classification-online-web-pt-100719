@@ -18,7 +18,7 @@ class Triangle
     end
   end
 
-  def validate_triangle
+  def valid_triangle
     real_traingle = [(side_a + side_b > side_c), (side_a + side_c > side_b), (side_b + side_c > side_a)]
     [side_a, side_b, side_c].each do |side|
       real_traingle << false if side <= 0
